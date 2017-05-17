@@ -11,3 +11,5 @@ Git readme
    git checkout master; // 切换分枝到master
    git merge dev; // 合并分枝
    git checkout -d dev; // 删除分枝dev
+
+   分枝冲突
