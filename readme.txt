@@ -9,11 +9,6 @@ Git readme
    git checkout -b dev; // 创建新的分枝dev
    git branch; // 查看分枝
    git checkout master; // 切换分枝到master
-<<<<<<< HEAD
    git merge dev; // 合并分枝
-=======
    git merge dev; // 合并某分枝到当前分枝
->>>>>>> feature1
    git checkout -d dev; // 删除分枝dev
-
-   分枝冲突1
