@@ -12,3 +12,7 @@ Git readme
    git merge dev; // 合并某分枝到当前分枝
    git checkout -d dev; // 删除分枝dev
    git merge --no-ff -m "xxxx" dev; // 
+
+   git stash; // 把当前工作现场“储存”起来，等以后恢复现场后继续工作
+   git stash list; // 查看工作现场
+   git stash pop; // 恢复现场
