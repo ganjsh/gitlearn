@@ -12,3 +12,4 @@ Git readme
    git merge dev; // 合并分枝
    git merge dev; // 合并某分枝到当前分枝
    git checkout -d dev; // 删除分枝dev
+   分枝管理策略
