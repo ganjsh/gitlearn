@@ -35,3 +35,6 @@ Git readme
    git push origin --tags; 可以推送全部未推送过的本地标签
    git tag -d <tagname>; 可以删除一个本地标签
    git push origin :refs/tags/<tagname>; // 可以删除一个远程标签
+5. git补丁
+   生成补丁：git format-patch -1; 或者 git format-patch HEAD^;
+   应用补丁：git apply patch
