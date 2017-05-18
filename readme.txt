@@ -23,4 +23,6 @@ Git readme
    没有冲突或者解决掉冲突后，再用git push origin branch-name推送就能成功
 
    在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致
+	可能会出现错误：fatal: Cannot update paths and switch to branch 'dev' at the same time.
+	解决方案：先git fetch; 再git checkout -b branch-name origin/branch-name
    建立分支和远程分支的关联，使用git branch --set-upstream branch-name origin/branch-name
