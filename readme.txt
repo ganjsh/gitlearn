@@ -2,7 +2,7 @@
 Git is free software 
 Git readme
 
-1. git remote add origin git@server-name:path/repo-name.git;
+1. git remote add origin git@server-name:path/repo-name.git; // 本地连接到远程仓库
    git push -u origin master; //将最新修改推送到远程服务器
    git clone git@server-name:path/repo-name.git; // 从远程服务器上克隆到本地
 2. 分枝管理
@@ -38,3 +38,5 @@ Git readme
 5. git补丁
    生成补丁：git format-patch -1; 或者 git format-patch HEAD^;
    应用补丁：git apply patch
+6. 生成ssh key
+   ssh-keygen -t rsa -C "your email";
