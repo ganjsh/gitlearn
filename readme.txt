@@ -26,3 +26,12 @@ Git readme
 	可能会出现错误：fatal: Cannot update paths and switch to branch 'dev' at the same time.
 	解决方案：先git fetch; 再git checkout -b branch-name origin/branch-name
    建立分支和远程分支的关联，使用git branch --set-upstream branch-name origin/branch-name
+4. 标签管理：标签也是版本库的快照
+   git tag <name>; // 创建标签，默认为HEAD，也可以指定commitid
+   git tag -a <name> -m "xxx"; // 可以指定标签信息
+   git tag -s <name> -m "xxx"; // 可以用PGP签名标签
+   git tag; // 查看所有标签   git show <name>; // 显示指定标签的信息
+   git push origin <tagname>; // 推送一个本地标签
+   git push origin --tags; 可以推送全部未推送过的本地标签
+   git tag -d <tagname>; 可以删除一个本地标签
+   git push origin :refs/tags/<tagname>; // 可以删除一个远程标签
